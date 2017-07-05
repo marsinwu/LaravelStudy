@@ -12,7 +12,7 @@
 */
 
 
-/* This is the home page route*/
+/* This is the home page route */
 Route::get('/', function () {
     $data = array(
         'pageTitle' => 'Blogi'
@@ -29,7 +29,7 @@ Route::get('/about', function () {
     return view('about')->with($data);
 });
 
-/* This is the contact me page route*/
+/* This is the contact me page route */
 Route::get('/contact', function () {
     $data = array(
         'pageTitle' => 'Contact Me'
@@ -40,6 +40,7 @@ Route::get('/contact', function () {
     return view('contact')->with($data)->with('names', $names);
 });
 
+/* This is the route for adding new post */
 Route::get('/post/create', function () {
     $data = array(
         'pageTitle' => 'Add new post',
