@@ -5,7 +5,7 @@
         @yield('pageTitle')
     </title>
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:100" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}"/>
     <link type="text/css" rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}"/>
     <link type="text/css" rel="stylesheet" href="{{asset('css/my-styles.css')}}"/>

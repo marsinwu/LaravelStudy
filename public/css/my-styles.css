@@ -3,7 +3,6 @@ body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     color: #383838;
     background-color: #f7f7f7;
-    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
 }
 
@@ -86,16 +85,68 @@ img {
     margin-top: 10%;
 }
 
-#post-item span {
+#post-item span, #post-item-trashed span {
     background: #fb0000;
     color: white;
     text-align: center;
     width: 0px;
     transition: all 0.3s linear;
     opacity: 0;
+    height: 40px;
 }
 
-#post-item:hover span {
-    width: 20px;
+#post-item:hover span, #post-item-trashed:hover span {
+    width: 40px;
     opacity: 1;
+}
+
+#post-item-trashed span {
+    background-color: #2ca02c;
+}
+
+#post-item-trashed, #post-item-trashed a {
+    color: #a1a1a1;
+    text-decoration: none;
+}
+
+#post-body {
+    font-size: 1em;
+}
+
+.caption {
+    margin-top: 10px;
+}
+
+.img-thumbnail {
+    width: 100%;
+}
+
+#post-list-abstract {
+    font-size: .95em;
+}
+
+.list-group-item {
+    vertical-align: middle;
+    padding: 0;
+}
+
+#posts-list li span {
+    vertical-align: middle;
+    /*margin-right: 20px;*/
+}
+
+.post-link {
+    margin-left: 20px;
+}
+
+#posts-list .fa {
+    line-height: 40px;
+}
+
+#post-header {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-bottom: 3%;
 }
